@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'pages.apps.PagesConfig',
 
-    'core.apps.CoreConfig',  # приложение для обработки ошибок 
+    # 'core.apps.CoreConfig',  приложение для обработки ошибок 
 
 ]
 
@@ -139,7 +139,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_FAILURE_VIEW = 'core.views.csrf_failure' 
+CSRF_FAILURE_VIEW = 'pages.views.csrf_failure' 
 
 
 # Куда перенаправлять после регистрации/логина
