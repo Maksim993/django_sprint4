@@ -153,3 +153,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Папка для изображений постов
 POSTS_IMAGES_DIR = 'posts_images/'
+
+# Файловый бэкенд для отправки писем
+EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+# Директория для сохранения писем
+EMAIL_FILE_PATH = BASE_DIR / 'sent_emails'
